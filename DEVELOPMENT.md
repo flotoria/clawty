@@ -3,10 +3,9 @@
 ## Project Structure
 
 ```
-imessage-claude-code/
+clawty/
 ├── bin/
-│   ├── imessage-claude.ts    # NPM bin entry point (shebang wrapper → src/cli.ts)
-│   └── clawty.ts             # Alternative bin entry point (identical)
+│   └── clawty.ts             # Bin entry point (shebang wrapper → src/cli.ts)
 ├── src/
 │   ├── cli.ts                # Full bridge — args, banner, polling loop, slash commands,
 │   │                         #   streaming Claude subprocess, erase-and-redraw TUI

@@ -1,6 +1,6 @@
 {
   "name": "clawty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "module": "src/index.ts",
   "devDependencies": {
     "@types/bun": "latest"
@@ -9,7 +9,6 @@
     "typescript": "^5"
   },
   "bin": {
-    "imessage-claude": "./bin/imessage-claude.ts",
     "clawty": "./bin/clawty.ts"
   },
   "description": "Bridge iMessage to Claude Code CLI — text Claude from your phone",

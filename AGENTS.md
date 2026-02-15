@@ -2,7 +2,7 @@
 
 ## Overview
 
-`imessage-claude-code` is an iMessage-to-Claude Code bridge built with Bun. It polls `chat.db` for incoming iMessages, runs `claude -p` as a streaming subprocess, and sends the response back via iMessage. The terminal shows a live TUI with an always-visible input prompt, animated thinking spinner, streaming output with cursor tracking, and message queuing.
+`clawty` is an iMessage-to-Claude Code bridge built with Bun. It polls `chat.db` for incoming iMessages, runs `claude -p` as a streaming subprocess, and sends the response back via iMessage. The terminal shows a live TUI with an always-visible input prompt, animated thinking spinner, streaming output with cursor tracking, and message queuing.
 
 ## Project Stack
 
@@ -22,7 +22,7 @@
 | `src/imessage/database.ts` | SQLite reader for `~/Library/Messages/chat.db` — polls by ROWID, extracts text from `attributedBody` blobs, phone number variation matching |
 | `src/imessage/sender.ts` | JXA + AppleScript iMessage sender (temp-file based). Splits long messages (>15000 chars) into numbered chunks |
 | `src/claude/runner.ts` | Preflight check — `verifyClaudeInstalled()` |
-| `bin/imessage-claude.ts` | NPM bin entry point (shebang wrapper → `src/cli.ts`) |
+| `bin/clawty.ts` | Bin entry point (shebang wrapper → `src/cli.ts`) |
 | `bin/clawty.ts` | Alternative bin entry point (identical) |
 
 ## Conventions

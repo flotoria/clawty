@@ -332,7 +332,7 @@ function printUsage(): void {
   ${BRIGHT_MAGENTA}\u2726${RESET}  ${BOLD}iMessage ${BRIGHT_MAGENTA}\u2194${RESET}${BOLD} Claude Code${RESET}
      ${DIM}Text Claude Code from your phone via iMessage${RESET}
 
-  ${BOLD}Usage${RESET}  ${DIM}imessage-claude [options]${RESET}
+  ${BOLD}Usage${RESET}  ${DIM}clawty [options]${RESET}
 
   ${BOLD}Options${RESET}
     ${BRIGHT_MAGENTA}--contact, -c${RESET} ${DIM}<phone|email>${RESET}   Contact to bridge with ${DIM}(required)${RESET}

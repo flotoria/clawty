@@ -1,4 +1,4 @@
-# imessage-claude-code
+# Clawty
 
 Bridge iMessage to Claude Code CLI — text Claude from your phone.
 
@@ -33,8 +33,8 @@ You can also type messages directly in the terminal — they're sent to Claude t
 ### 1. Install
 
 ```bash
-git clone https://github.com/nichochar/imessage-claude-code.git
-cd imessage-claude-code
+git clone https://github.com/flotoria/clawty.git
+cd clawty
 bun install
 ```
 
@@ -71,7 +71,7 @@ Options:
   --help, -h                    Show help
 ```
 
-Also available as `clawty` (alias for `imessage-claude`).
+Also available as `clawty` after installing globally with `bun install -g`.
 
 ### Examples
 

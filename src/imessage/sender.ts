@@ -18,7 +18,7 @@ async function cleanupTmpFile(path: string): Promise<void> {
  * from a temp file to avoid all string escaping issues.
  */
 async function sendViaJxa(contact: string, text: string): Promise<{ ok: boolean; error?: string }> {
-  const tmpFile = join(tmpdir(), `imessage-claude-${Date.now()}-${Math.random().toString(36).slice(2)}.txt`);
+  const tmpFile = join(tmpdir(), `clawty-${Date.now()}-${Math.random().toString(36).slice(2)}.txt`);
   await Bun.write(tmpFile, text);
 
   try {
@@ -58,7 +58,7 @@ function run() {
  * Reads message from temp file. Tries participant syntax, then buddy syntax.
  */
 async function sendViaAppleScript(contact: string, text: string): Promise<{ ok: boolean; error?: string }> {
-  const tmpFile = join(tmpdir(), `imessage-claude-${Date.now()}.txt`);
+  const tmpFile = join(tmpdir(), `clawty-${Date.now()}.txt`);
   await Bun.write(tmpFile, text);
 
   const escapedContact = contact.replace(/\\/g, "\\\\").replace(/"/g, '\\"');

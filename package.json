@@ -1,0 +1,44 @@
+{
+  "name": "clawty",
+  "version": "0.0.1",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "bin": {
+    "imessage-claude": "./bin/imessage-claude.ts",
+    "clawty": "./bin/clawty.ts"
+  },
+  "description": "Bridge iMessage to Claude Code CLI — text Claude from your phone",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md"
+  ],
+  "keywords": [
+    "imessage",
+    "claude",
+    "claude-code",
+    "ai",
+    "bridge",
+    "macos",
+    "sms",
+    "cli"
+  ],
+  "license": "MIT",
+  "os": [
+    "darwin"
+  ],
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "dev": "bun run src/cli.ts"
+  },
+  "type": "module",
+  "dependencies": {}
+}

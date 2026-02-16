@@ -33,9 +33,7 @@ You can also type messages directly in the terminal — they're sent to Claude t
 ### 1. Install
 
 ```bash
-git clone https://github.com/flotoria/clawty.git
-cd clawty
-bun install
+bun add -g clawty
 ```
 
 ### 2. Grant macOS Permissions
@@ -52,7 +50,7 @@ bun install
 ### 3. Start the Bridge
 
 ```bash
-bun run src/cli.ts --contact "+1234567890"
+clawty --contact "+1234567890"
 ```
 
 Replace `+1234567890` with your phone number (the one you'll text from). If you omit `--contact`, the bridge will prompt you for it interactively.
@@ -71,19 +69,17 @@ Options:
   --help, -h                    Show help
 ```
 
-Also available as `clawty` after installing globally with `bun install -g`.
-
 ### Examples
 
 ```bash
 # Basic — respond to texts from your phone number
-bun run src/cli.ts -c "+1234567890"
+clawty -c "+1234567890"
 
 # With a project directory so Claude has file context
-bun run src/cli.ts -c "+1234567890" -d ~/projects/myapp
+clawty -c "+1234567890" -d ~/projects/myapp
 
 # Use a specific model
-bun run src/cli.ts -c "+1234567890" -m opus
+clawty -c "+1234567890" -m opus
 ```
 
 ### Terminal UI

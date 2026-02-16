@@ -1,6 +1,6 @@
 {
   "name": "clawty",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "module": "src/index.ts",
   "devDependencies": {
     "@types/bun": "latest"
